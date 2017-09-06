@@ -8,11 +8,11 @@ django = "*"
 gunicorn = "*"
 psycopg2 = "*"
 whitenoise = "*"
-"http.client" = "*"
-urllib2 = "*"
+httplib = "*"
+urllib = "*"
 yahoo_finance = "*"
 
 
 
 [requires]
-python_version = "3.6"
+python_version = "2.7"
