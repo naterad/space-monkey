@@ -8,9 +8,6 @@ django = "*"
 gunicorn = "*"
 psycopg2 = "*"
 whitenoise = "*"
-httplib = "*"
-urllib = "*"
-yahoo_finance = "*"
 
 
 
