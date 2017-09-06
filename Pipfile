@@ -8,6 +8,16 @@ django = "*"
 gunicorn = "*"
 psycopg2 = "*"
 whitenoise = "*"
+httplib = "*"
+urllib = "*"
+time = "*"
+yahoo_finance = "*"
+requests = "*"
+datetime = "*"
+re = "*"
+sys = "*"
+
+
 
 [requires]
 python_version = "3.6"
