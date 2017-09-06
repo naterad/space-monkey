@@ -9,7 +9,7 @@ gunicorn = "*"
 psycopg2 = "*"
 whitenoise = "*"
 "http.client" = "*"
-"urllib.request" = "*"
+urllib2 = "*"
 yahoo_finance = "*"
 
 
