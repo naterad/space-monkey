@@ -1,12 +1,14 @@
 # https://pypi.python.org/pypi/yahoo-finance/1.1.4
 
-import httplib, urllib, time
+import httplib
+import urllib
+# import time
 from yahoo_finance import Share
 # from lxml import html
-import requests
-from datetime import datetime, timedelta
-import re
-from sys import argv
+# import requests
+# from datetime import datetime, timedelta
+# import re
+# from sys import argv
 
 def sendMessage( message ):
 	conn = httplib.HTTPSConnection("api.pushover.net:443")

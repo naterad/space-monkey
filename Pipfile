@@ -8,14 +8,9 @@ django = "*"
 gunicorn = "*"
 psycopg2 = "*"
 whitenoise = "*"
-http.client = "*"
-urllib.request = "*"
-time = "*"
+"http.client" = "*"
+"urllib.request" = "*"
 yahoo_finance = "*"
-requests = "*"
-datetime = "*"
-re = "*"
-sys = "*"
 
 
 
