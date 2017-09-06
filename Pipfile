@@ -8,8 +8,9 @@ django = "*"
 gunicorn = "*"
 psycopg2 = "*"
 whitenoise = "*"
-
-
+httplib = "*"
+urllib = "*"
+yahoo_finance = "*"
 
 [requires]
 python_version = "2.7"
