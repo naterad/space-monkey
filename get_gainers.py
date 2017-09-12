@@ -11,16 +11,6 @@ import urllib
 # from sys import argv
 
 def sendMessage( message ):
-    # print(message)
-    # conn = http.client.HTTPSConnection("api.pushover.net:443")
-    # conn.request("POST", "/1/messages.json",
-    #              urllib.parse.urlencode({
-    #                  "token": "ardxcuep4y7ay39kpus4cgrvqx7rgh",
-    #                  "user": "ux1if13ofopvk7u3k8w5q6d12uukfu",
-    #                  "message": message
-    #                  }), { "Content-type": "application/x-www-form-urlencoded" })
-    # print (conn.getresponse())
-
     conn = httplib.HTTPSConnection("api.pushover.net:443")
     conn.request("POST", "/1/messages.json",
     urllib.urlencode({
@@ -30,6 +20,15 @@ def sendMessage( message ):
       }), { "Content-type": "application/x-www-form-urlencoded" })
     conn.getresponse()
     return
+
+def testPrint():
+    with open('test_write.txt', 'a') as myfile:
+        myfile.write('is this working?')
+        myfile.write('\n')
+        myfile.write('yep!')
+        myfile.write('\n')
+
+
 
 # def loadGainers():
 # 	print "loadGainers"
@@ -78,3 +77,4 @@ def sendMessage( message ):
 
 
 sendMessage("this is working!")
+testPrint()
