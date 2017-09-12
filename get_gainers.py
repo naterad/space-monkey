@@ -1,7 +1,7 @@
 # https://pypi.python.org/pypi/yahoo-finance/1.1.4
 
-# import httplib
-# import urllib
+import httplib
+import urllib
 # import time
 # from yahoo_finance import Share
 # from lxml import html
@@ -11,16 +11,25 @@
 # from sys import argv
 
 def sendMessage( message ):
-    print(message)
-	# conn = httplib.HTTPSConnection("api.pushover.net:443")
-	# conn.request("POST", "/1/messages.json",
-	#   urllib.urlencode({
-	#     "token": "ardxcuep4y7ay39kpus4cgrvqx7rgh",
-	#     "user": "ux1if13ofopvk7u3k8w5q6d12uukfu",
-	#     "message": message,
-	#   }), { "Content-type": "application/x-www-form-urlencoded" })
-	# conn.getresponse()
-	return
+    # print(message)
+    # conn = http.client.HTTPSConnection("api.pushover.net:443")
+    # conn.request("POST", "/1/messages.json",
+    #              urllib.parse.urlencode({
+    #                  "token": "ardxcuep4y7ay39kpus4cgrvqx7rgh",
+    #                  "user": "ux1if13ofopvk7u3k8w5q6d12uukfu",
+    #                  "message": message
+    #                  }), { "Content-type": "application/x-www-form-urlencoded" })
+    # print (conn.getresponse())
+
+    conn = httplib.HTTPSConnection("api.pushover.net:443")
+    conn.request("POST", "/1/messages.json",
+    urllib.urlencode({
+        "token": "ardxcuep4y7ay39kpus4cgrvqx7rgh",
+        "user": "ux1if13ofopvk7u3k8w5q6d12uukfu",
+        "message": message,
+      }), { "Content-type": "application/x-www-form-urlencoded" })
+    conn.getresponse()
+    return
 
 # def loadGainers():
 # 	print "loadGainers"
